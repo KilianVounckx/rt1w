@@ -7,16 +7,16 @@ use crate::ray::Ray;
 use crate::vec3::{Point3, Vec3};
 
 pub mod bvh_node;
+pub mod constant_medium;
+pub mod cube;
 pub mod moving_sphere;
+pub mod rotate_y;
 pub mod shape_list;
 pub mod sphere;
+pub mod translate;
 pub mod xy_rect;
 pub mod xz_rect;
 pub mod yz_rect;
-pub mod cube;
-pub mod translate;
-pub mod rotate_y;
-pub mod constant_medium;
 
 #[derive(Clone)]
 pub struct HitRecord {

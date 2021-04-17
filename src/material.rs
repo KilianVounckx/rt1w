@@ -6,9 +6,9 @@ use crate::vec3::{Color, Point3};
 
 pub mod dielectric;
 pub mod diffuse_light;
+pub mod isotropic;
 pub mod lambertian;
 pub mod metal;
-pub mod isotropic;
 
 pub trait Material {
     fn scatter(&self, ray: &Ray, rec: &HitRecord, rng: &mut ThreadRng) -> Option<(Ray, Color)>;

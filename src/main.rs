@@ -4,7 +4,7 @@ use rand::rngs::ThreadRng;
 use rtc::camera::{Camera, CameraConfig};
 use rtc::ray::Ray;
 use rtc::scenes::{
-	earth, random, simple_light, two_perlin_spheres, two_spheres, cornell_box, cornell_smoke, last,
+    cornell_box, cornell_smoke, earth, last, random, simple_light, two_perlin_spheres, two_spheres,
 };
 use rtc::shape::Shape;
 use rtc::vec3::{Color, Point3};
@@ -84,36 +84,36 @@ fn main() {
             at = Point3::new(0.0, 2.0, 0.0);
             vfov = 20.0;
         }
-		6 => {
-			world = cornell_box::build();
-			background = Some(Color::new(0.0, 0.0, 0.0));
-			aspect_ratio = 1.0;
-			image_width = 600;
-			samples_per_pixel = 200;
-			from = Point3::new(278.0, 278.0, -800.0);
-			at = Point3::new(278.0, 278.0, 0.0);
-			vfov = 40.0;
-		}
-		7 => {
-			world = cornell_smoke::build();
-			background = Some(Color::new(0.0, 0.0, 0.0));
-			aspect_ratio = 1.0;
-			image_width = 600;
-			samples_per_pixel = 200;
-			from = Point3::new(278.0, 278.0, -800.0);
-			at = Point3::new(278.0, 278.0, 0.0);
-			vfov = 40.0;
-		}
-		_ => {
-			world = last::build(&mut rng);
-			background = Some(Color::new(0.0, 0.0, 0.0));
-			aspect_ratio = 1.0;
-			image_width = 800;
-			samples_per_pixel = 200;
-			from = Point3::new(478.0, 278.0, -600.0);
-			at = Point3::new(278.0, 278.0, 0.0);
-			vfov = 40.0;
-		}
+        6 => {
+            world = cornell_box::build();
+            background = Some(Color::new(0.0, 0.0, 0.0));
+            aspect_ratio = 1.0;
+            image_width = 600;
+            samples_per_pixel = 200;
+            from = Point3::new(278.0, 278.0, -800.0);
+            at = Point3::new(278.0, 278.0, 0.0);
+            vfov = 40.0;
+        }
+        7 => {
+            world = cornell_smoke::build();
+            background = Some(Color::new(0.0, 0.0, 0.0));
+            aspect_ratio = 1.0;
+            image_width = 600;
+            samples_per_pixel = 200;
+            from = Point3::new(278.0, 278.0, -800.0);
+            at = Point3::new(278.0, 278.0, 0.0);
+            vfov = 40.0;
+        }
+        _ => {
+            world = last::build(&mut rng);
+            background = Some(Color::new(0.0, 0.0, 0.0));
+            aspect_ratio = 1.0;
+            image_width = 800;
+            samples_per_pixel = 200;
+            from = Point3::new(478.0, 278.0, -600.0);
+            at = Point3::new(278.0, 278.0, 0.0);
+            vfov = 40.0;
+        }
     }
     let image_height: u32 = (image_width as f64 / aspect_ratio) as u32;
 
@@ -124,7 +124,7 @@ fn main() {
         vfov,
         aperture,
         focus: 10.0,
-		aspect_ratio,
+        aspect_ratio,
         ..CameraConfig::default()
     });
 
