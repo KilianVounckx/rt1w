@@ -1,0 +1,1 @@
+{"rustc":18250536222580762119,"features":"[\"rayon\"]","target":13864602829548139896,"profile":7135973342887328704,"path":5497257443091880498,"deps":[[15741626050020215658,"rayon",false,5252654409603426714]],"local":[{"CheckDepInfo":{"dep_info":"debug/.fingerprint/jpeg-decoder-ca1703e6694d4d5b/dep-lib-jpeg-decoder"}}],"rustflags":[],"metadata":11222538340481966606,"config":0}
