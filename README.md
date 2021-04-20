@@ -1,4 +1,4 @@
-# rtc
+# rt1w
 
 A simple ray tracer based on the bookseries [_Ray Tracing in One Weekend_](https://raytracing.github.io/).
 Some resulting images can be found in the [outputs](outputs/) folder.
